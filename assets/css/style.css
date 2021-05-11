@@ -16,9 +16,28 @@
   margin: auto;
 }
 
+.left-container {
+  width: 380px;
+  border: 1px solid red;
+  opacity: 0.8;
+  border-radius: 8px;
+}
+
+.main-container {
+  width: 820px;
+  border: 1px solid red;
+}
+
+.btn {
+  color: #fff;
+  border: 1px solid #FFFFFF;
+  border-radius: 8px;
+}
+
 .header-wrap {
   color: #fff;
   padding: 15px 0;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 .header {
@@ -48,5 +67,116 @@
 
 .header-nav .header-menu .menu-item-link {
   color: #075157;
+}
+
+.main-wrapp {
+  background: url("../images/main-bg.png") center no-repeat;
+  height: 488px;
+}
+
+.main {
+  padding-top: 30px;
+  display: flex;
+}
+
+.main .main-call {
+  background: #6D81AE;
+  padding: 20px 15px;
+  text-align: center;
+}
+
+.main .main-call-text {
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.main .main-call-phone .number {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  color: #FFFFFF;
+}
+
+.main .main-call .text {
+  text-align-last: left;
+  margin: 30px 0 17px 0;
+  color: #fff;
+}
+
+.main .main-call .icon {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main .main-call .icon-link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.main .main-call .icon-link p {
+  margin-left: 10px;
+  font-family: Open Sans;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
+  color: #FFFFFF;
+}
+
+.main .main-call .info {
+  text-align-last: left;
+  padding: 26px 0 20px 0;
+}
+
+.main .main-call .info .email, .main .main-call .info .time, .main .main-call .info .location {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.main .main-call .info .email p, .main .main-call .info .time p, .main .main-call .info .location p {
+  margin: 0 5px 0 10px;
+  font-family: Open Sans;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
+  color: #FFFFFF;
+}
+
+.main .main-call .info .email span, .main .main-call .info .time span, .main .main-call .info .location span {
+  font-size: 14px;
+  line-height: 19px;
+  color: #FFB800;
+}
+
+.main .main-call .main-call-btn {
+  padding: 10px 90px;
+}
+
+.main .main-call .main-call-btn:hover {
+  background: #FFB800;
+  border: none;
+  border-radius: 8px;
+}
+
+.main .main-call .btn-wrap {
+  margin-top: 30px;
+}
+
+.main .main-call .btn-wrap .btn {
+  padding: 10px 20px;
+}
+
+.main .main-call .btn-wrap .btn:not(:first-child) {
+  margin-left: 34px;
+  padding: 10px 30px;
+}
+
+.main .main-call .btn-wrap .btn:hover {
+  background: #FFB800;
+  border: none;
+  border-radius: 8px;
 }
 /*# sourceMappingURL=style.css.map */

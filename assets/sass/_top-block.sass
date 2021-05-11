@@ -1,0 +1,74 @@
+.main-wrapp
+  background: url("../images/main-bg.png") center no-repeat
+  height: 488px
+.main
+  padding-top: 30px
+  display: flex
+  .main-call
+    background: $purple
+    padding: 20px 15px
+    text-align: center
+    &-text
+      margin-bottom: 10px
+      color: #fff
+    &-phone
+      .number
+        font-family: Open Sans
+        font-style: normal
+        font-weight: bold
+        font-size: 18px
+        line-height: 25px
+        color: #FFFFFF
+    .text
+      text-align-last: left
+      margin: 30px 0 17px 0
+      color: #fff
+    .icon
+      display: flex
+      justify-content: space-between
+      &-link
+        display: flex
+        flex-direction: row
+        align-items: center
+        p
+          margin-left: 10px
+          font-family: Open Sans
+          font-weight: bold
+          font-size: 14px
+          line-height: 19px
+          color: #FFFFFF
+    .info
+      text-align-last: left
+      padding: 26px 0 20px 0
+      .email, .time, .location
+        display: flex
+        align-items: center
+        margin-bottom: 20px
+        p
+          margin: 0 5px 0 10px
+          font-family: Open Sans
+          font-weight: bold
+          font-size: 14px
+          line-height: 19px
+          color: #FFFFFF
+        span
+          font-size: 14px
+          line-height: 19px
+          color: #FFB800
+    .main-call-btn
+      padding: 10px 90px
+      &:hover
+        background: #FFB800
+        border: none
+        border-radius: 8px
+    .btn-wrap
+      margin-top: 30px
+      .btn
+        padding: 10px 20px
+        &:not(:first-child)
+          margin-left: 34px
+          padding: 10px 30px
+        &:hover
+          background: #FFB800
+          border: none
+          border-radius: 8px
