@@ -1,1 +1,52 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  color: #000;
+  font-family: Open Sans;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.header-wrap {
+  color: #fff;
+  padding: 15px 0;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-nav .header-menu {
+  display: flex;
+}
+
+.header-nav .header-menu .menu-item {
+  padding: 10px;
+  border: 1px solid #075157;
+  border-radius: 8px;
+  margin-left: 14px;
+}
+
+.header-nav .header-menu .menu-item:hover {
+  background: #075157;
+}
+
+.header-nav .header-menu .menu-item:hover .menu-item-link {
+  color: #fff;
+}
+
+.header-nav .header-menu .menu-item-link {
+  color: #075157;
+}
+/*# sourceMappingURL=style.css.map */
