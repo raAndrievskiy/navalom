@@ -638,17 +638,117 @@ body {
 
 .money-left {
   width: 50%;
+  margin-top: 20px;
+  padding-right: 30px;
+}
+
+.money-left .description {
+  font-style: italic;
+}
+
+.money-left ul li {
+  list-style: inside;
 }
 
 .money-right {
   width: 50%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  padding: 20px 15px;
+}
+
+.money-right .input-wrap {
+  display: flex;
+}
+
+.money-right .input-wrap .input-1 {
+  width: 162px;
   display: flex;
   flex-direction: column;
 }
 
-.money-right .input-1 {
+.money-right .input-wrap .input-1 input::-webkit-outer-spin-button,
+.money-right .input-wrap .input-1 input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.money-right .input-wrap .input-1 span {
+  font-style: italic;
+  margin-bottom: 5px;
+}
+
+.money-right .input-wrap .input-1:not(last-child) {
+  margin-right: 20px;
+}
+
+.money-right .input-wrap .input-1 select, .money-right .input-wrap .input-1 input {
+  border: none;
+  background: rgba(218, 218, 218, 0.8);
+  border-radius: 8px;
+  padding: 10px;
+  width: 162px;
+  height: 38px;
+  color: #565655;
+  margin-bottom: 20px;
+  outline: none;
+}
+
+.money-right .input-2 {
+  margin-bottom: 15px;
+}
+
+.money-right .input-2 .p-wrap {
+  display: flex;
+  flex-direction: row;
+}
+
+.money-right .input-2 .p-wrap p:not(last-child) {
+  margin-right: 30px;
+}
+
+.money-right .input-2 .p-wrap p input {
+  margin-right: 10px;
+  outline: none;
+}
+
+.money-right .input-3 {
   display: flex;
   flex-direction: column;
+}
+
+.money-right .input-3 .input-wrap input {
+  border: none;
+  background: rgba(218, 218, 218, 0.8);
+  border-radius: 8px;
+  padding: 10px;
+  width: 162px;
+  height: 38px;
+  color: #565655;
+  margin-bottom: 20px;
+  outline: none;
+}
+
+.money-right .input-3 .input-wrap input:not(last-child) {
+  margin-right: 20px;
+}
+
+.money-right .input-3 p {
+  font-size: 12px;
+  color: #565655;
+  margin-bottom: 20px;
+}
+
+.money-right .input-3 p input {
+  outline: none;
+}
+
+.money-right .input-3 .btn-main {
+  padding: 10px 25px;
+  width: 222px;
 }
 
 .equipment {

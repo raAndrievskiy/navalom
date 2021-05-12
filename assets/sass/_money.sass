@@ -2,10 +2,79 @@
   display: flex
   &-left
     width: 50%
+    margin-top: 20px
+    padding-right: 30px
+    .description
+      font-style: italic
+    ul
+      li
+        list-style: inside
   &-right
     width: 50%
+    margin-top: 20px
     display: flex
     flex-direction: column
-    .input-1
+    background: rgba(#FFFFFF , 0.8 )
+    border-radius: 8px
+    padding: 20px 15px
+    .input-wrap
+      display: flex
+      .input-1
+        width: 162px
+        display: flex
+        flex-direction: column
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button
+          -webkit-appearance: none
+          margin: 0
+        span
+          font-style: italic
+          margin-bottom: 5px
+        &:not(last-child)
+          margin-right: 20px
+        select, input
+          border: none
+          background: rgba(#DADADA, 0.8)
+          border-radius: 8px
+          padding: 10px
+          width: 162px
+          height: 38px
+          color: #565655
+          margin-bottom: 20px
+          outline: none
+    .input-2
+      margin-bottom: 15px
+      .p-wrap
+        display: flex
+        flex-direction: row
+        p
+          &:not(last-child)
+            margin-right: 30px
+          input
+            margin-right: 10px
+            outline: none
+    .input-3
       display: flex
       flex-direction: column
+      .input-wrap
+        input
+          border: none
+          background: rgba(#DADADA, 0.8)
+          border-radius: 8px
+          padding: 10px
+          width: 162px
+          height: 38px
+          color: #565655
+          margin-bottom: 20px
+          outline: none
+          &:not(last-child)
+            margin-right: 20px
+      p
+        font-size: 12px
+        color: #565655
+        margin-bottom: 20px
+        input
+          outline: none
+      .btn-main
+        padding: 10px 25px
+        width: 222px
