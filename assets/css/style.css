@@ -631,4 +631,23 @@ body {
 .calculator-wrap .calculator .wrap .calculator-popup .result::placeholder {
   color: #fff;
 }
+
+.money {
+  display: flex;
+}
+
+.money-left {
+  width: 50%;
+}
+
+.money-right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.money-right .input-1 {
+  display: flex;
+  flex-direction: column;
+}
 /*# sourceMappingURL=style.css.map */
