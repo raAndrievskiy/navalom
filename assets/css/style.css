@@ -28,12 +28,40 @@ body {
 
 .main-container {
   width: 820px;
+  margin-left: 26px;
 }
 
 .btn {
   color: #fff;
   border: 1px solid #FFFFFF;
   border-radius: 8px;
+}
+
+.btn-main {
+  background: #FFB800;
+  border-radius: 8px;
+  border: none;
+  width: 212px;
+  margin: 0 auto;
+  padding: 10px 25px;
+  color: #fff;
+}
+
+.btn-main:hover {
+  background: #ffa600;
+}
+
+.green-btn {
+  padding: 10px;
+  border: 1px solid #075157;
+  border-radius: 8px;
+  margin-left: 14px;
+  color: #075157;
+}
+
+.green-btn:hover {
+  background: #075157;
+  color: #fff;
 }
 
 .title {
@@ -160,7 +188,7 @@ body {
 }
 
 .main .main-call .main-call-btn {
-  padding: 10px 90px;
+  padding: 10px 80px;
 }
 
 .main .main-call .main-call-btn:hover {
@@ -178,7 +206,7 @@ body {
 }
 
 .main .main-call .btn-wrap .btn:not(:first-child) {
-  margin-left: 34px;
+  margin-left: 20px;
   padding: 10px 30px;
 }
 
@@ -195,7 +223,7 @@ body {
 .main .price-info .img-wrap {
   display: flex;
   flex-direction: column;
-  margin: 0 40px 0 50px;
+  margin: 0 40px 0 20px;
 }
 
 .main .price-info .img-wrap .license {
@@ -329,10 +357,6 @@ body {
   content: url("../images/metal-services/metal-click.svg");
 }
 
-.metal-info {
-  padding-left: 30px;
-}
-
 .metal-info .title-wrap {
   display: flex;
   justify-content: space-between;
@@ -374,5 +398,237 @@ body {
 
 .metal-service-wrap .metal-service .description {
   padding: 0 15px;
+}
+
+.calculator-wrap {
+  display: flex;
+  margin-top: 35px;
+}
+
+.calculator-wrap .reviews {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  text-align: center;
+  padding-bottom: 15px;
+  margin-bottom: 30px;
+}
+
+.calculator-wrap .reviews .title {
+  border-bottom: 1px solid #075157;
+  padding: 20px 0 15px 0;
+}
+
+.calculator-wrap .reviews-description {
+  font-size: 18px;
+  line-height: 25px;
+  color: #075157;
+  margin: 15px 0 45px;
+}
+
+.calculator-wrap .reviews .review {
+  text-align: left;
+}
+
+.calculator-wrap .reviews .review-first-item {
+  display: flex;
+  align-items: center;
+  margin: 0 30px 0 50px;
+}
+
+.calculator-wrap .reviews .review-first-item span {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 27px;
+  color: #075157;
+  margin: 0 5px;
+}
+
+.calculator-wrap .reviews .review-first-item p {
+  font-weight: bold;
+  color: #B4C6C8;
+}
+
+.calculator-wrap .reviews .review-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 30px 0 50px;
+}
+
+.calculator-wrap .reviews .review-item .green-btn {
+  padding: 8px 40px;
+}
+
+.calculator-wrap .reviews-info {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  padding-bottom: 30px;
+  position: relative;
+  text-align: center;
+}
+
+.calculator-wrap .reviews-info::before {
+  content: url("../images/attention.svg");
+  position: absolute;
+  left: 5px;
+  padding: 22px;
+}
+
+.calculator-wrap .reviews-info p {
+  text-align: left;
+  font-size: 18px;
+  line-height: 25px;
+  padding: 20px 30px 30px 65px;
+  margin: auto;
+  color: #075157;
+}
+
+.calculator-wrap .description {
+  margin: 20px 0;
+}
+
+.calculator-wrap .calculator {
+  background: #FFFFFF;
+  border: 1px solid #C0C0C0;
+  border-radius: 8px;
+  margin-bottom: 100px;
+}
+
+.calculator-wrap .calculator-title {
+  text-align: center;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  padding: 10px 0;
+}
+
+.calculator-wrap .calculator .wrap {
+  max-width: 685px;
+  display: flex;
+  position: relative;
+}
+
+.calculator-wrap .calculator .wrap .product {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: center;
+  border-right: 1px solid #C0C0C0;
+}
+
+.calculator-wrap .calculator .wrap .product .bold {
+  border-top: 1px solid #C0C0C0;
+  font-weight: bold;
+  font-size: 14px;
+  color: #075157;
+  padding: 10px;
+  height: 59px;
+}
+
+.calculator-wrap .calculator .wrap .product .bold span {
+  font-weight: normal;
+  color: #075157;
+}
+
+.calculator-wrap .calculator .wrap .info {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 84px;
+  border-right: 1px solid #C0C0C0;
+}
+
+.calculator-wrap .calculator .wrap .info span {
+  border-top: 1px solid #C0C0C0;
+  font-size: 14px;
+  color: #075157;
+  padding: 10px;
+  height: 59px;
+}
+
+.calculator-wrap .calculator .wrap .calculator-popup {
+  background: #6D81AE;
+  border-radius: 8px;
+  width: 185px;
+  height: 343px;
+  text-align: center;
+  position: absolute;
+  right: -116px;
+  top: -46px;
+}
+
+.calculator-wrap .calculator .wrap .calculator-popup .calculator-title {
+  color: #fff;
+}
+
+.calculator-wrap .calculator .wrap .calculator-popup span {
+  color: #fff;
+  display: block;
+  margin: 20px 0;
+}
+
+.calculator-wrap .calculator .wrap .calculator-popup-wrap {
+  border-top: 1px solid #C0C0C0;
+}
+
+.calculator-wrap .calculator .wrap .calculator-popup-wrap:last-of-type {
+  border-bottom: 1px solid #C0C0C0;
+}
+
+.calculator-wrap .calculator .wrap .calculator-popup-wrap .btn-calc {
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: #5B6FA3;
+}
+
+.calculator-wrap .calculator .wrap .calculator-popup-wrap .btn-calc:active, .calculator-wrap .calculator .wrap .calculator-popup-wrap .btn-calc:hover {
+  background: #2E4684;
+}
+
+.calculator-wrap .calculator .wrap .calculator-popup-wrap input {
+  color: #fff;
+  width: 96px;
+  text-align: center;
+  outline: none;
+  border: none;
+  background: none;
+}
+
+.calculator-wrap .calculator .wrap .calculator-popup-wrap input::-webkit-outer-spin-button,
+.calculator-wrap .calculator .wrap .calculator-popup-wrap input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.calculator-wrap .calculator .wrap .calculator-popup .subtitle {
+  margin-top: 5px;
+  font-style: italic;
+  color: #FFB800;
+}
+
+.calculator-wrap .calculator .wrap .calculator-popup input::-webkit-outer-spin-button,
+.calculator-wrap .calculator .wrap .calculator-popup input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.calculator-wrap .calculator .wrap .calculator-popup .result {
+  border: none;
+  background: none;
+  outline: none;
+  text-align: center;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  color: #FFFFFF;
+  width: 80px;
+}
+
+.calculator-wrap .calculator .wrap .calculator-popup .result::placeholder {
+  color: #fff;
 }
 /*# sourceMappingURL=style.css.map */
