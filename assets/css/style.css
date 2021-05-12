@@ -646,6 +646,10 @@ body {
   font-style: italic;
 }
 
+.money-left ul {
+  margin-bottom: 30px;
+}
+
 .money-left ul li {
   list-style: inside;
 }
@@ -831,5 +835,101 @@ body {
 
 .reception .bg::after {
   content: url("../images/car.png");
+}
+
+.delivery {
+  margin-top: 30px;
+  position: relative;
+}
+
+.delivery .area-slider {
+  margin-top: 30px;
+}
+
+.delivery .area-slider .swiper-slide {
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.delivery .area-slider .swiper-slide img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.delivery .area-slider .swiper-slide .title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
+  color: #075157;
+  text-align: left;
+  padding: 0 10px;
+}
+
+.delivery .area-slider .swiper-slide .description {
+  margin: 15px 0 30px 0;
+  text-align: left;
+  padding: 0 10px;
+}
+
+.delivery .area-slider .swiper-slide .green-btn {
+  margin: 0;
+  padding: 10px 75px;
+}
+
+.delivery .swiper-button-prev::after {
+  content: '';
+  background: #DADADA;
+  background-image: url("../images/prev.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  left: -40px;
+  z-index: 99;
+}
+
+.delivery .swiper-button-prev:hover::after {
+  background: #94A2C4;
+  background-image: url("../images/prev.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.delivery .swiper-button-next::after {
+  content: '';
+  background: #DADADA;
+  background-image: url("../images/next.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  right: -40px;
+}
+
+.delivery .swiper-button-next:hover::after {
+  background: #94A2C4;
+  background-image: url("../images/next.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.delivery .area-pagination {
+  left: 390px;
+  bottom: -20px;
+}
+
+.delivery .area-pagination .swiper-pagination-bullet-active {
+  background: #075157;
+}
+
+.delivery .area-pagination .swiper-pagination-bullet {
+  margin-right: 10px;
 }
 /*# sourceMappingURL=style.css.map */

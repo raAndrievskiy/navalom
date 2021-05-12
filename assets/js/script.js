@@ -22,3 +22,16 @@ $('.sections-wrap').click(function (e) {
     $(this).addClass('active-link');
   }
 });
+
+const swiper = new Swiper('.area-slider', {
+  loop: true,
+  spaceBetween: 30,
+  slidesPerView: 3,
+  pagination: {
+    el: '.area-pagination',
+  },
+  navigation: {
+    nextEl: '.area-button-next',
+    prevEl: '.area-button-prev',
+  },
+});
