@@ -286,7 +286,7 @@ body {
 .metal .color-metal {
   background: #6D81AE;
   border-radius: 8px;
-  height: 696px;
+  height: 670px;
 }
 
 .metal .color-metal .title-info {
@@ -302,6 +302,31 @@ body {
 .metal .color-metal-item {
   display: flex;
   flex-direction: column;
+  padding: 25px 25px 90px 20px;
+  cursor: pointer;
+}
+
+.metal .color-metal-item .metal-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.metal .color-metal-item .metal-item::after {
+  content: url("../images/metal-services/metal-arrow.svg");
+  position: absolute;
+  right: 0;
+}
+
+.metal .color-metal-item .metal-item .item {
+  margin-left: 15px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.metal .color-metal-item .active::after {
+  content: url("../images/metal-services/metal-click.svg");
 }
 
 .metal-info {

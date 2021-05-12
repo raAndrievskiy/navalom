@@ -5,7 +5,7 @@
     &-metal
       background: $purple
       border-radius: 8px
-      height: 696px
+      height: 670px
       .title-info
         font-weight: bold
         font-size: 18px
@@ -17,6 +17,24 @@
       &-item
         display: flex
         flex-direction: column
+        padding: 25px 25px 90px 20px
+        cursor: pointer
+        .metal-item
+          display: flex
+          align-items: center
+          margin-bottom: 10px
+          position: relative
+          &::after
+            content: url("../images/metal-services/metal-arrow.svg")
+            position: absolute
+            right: 0
+          .item
+            margin-left: 15px
+            font-weight: bold
+            color: #fff
+        .active::after
+          content: url("../images/metal-services/metal-click.svg")
+
   &-info
     padding-left: 30px
     .title-wrap
