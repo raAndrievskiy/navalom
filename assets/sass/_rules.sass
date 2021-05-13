@@ -53,3 +53,45 @@ body
 .who-description
   max-width: 508px
   margin: 25px 0 20px 0
+.swiper-button-prev
+  &::after
+    content: ''
+    background: #DADADA
+    background-image: url("../images/prev.svg")
+    background-repeat: no-repeat
+    background-position: center
+    position: absolute
+    border-radius: 50%
+    width: 25px
+    height: 25px
+    left: -40px
+    z-index: 99
+  &:hover::after
+    background: #94A2C4
+    background-image: url("../images/prev.svg")
+    background-repeat: no-repeat
+    background-position: center
+.swiper-button-next
+  &::after
+    content: ''
+    background: #DADADA
+    background-image: url("../images/next.svg")
+    background-repeat: no-repeat
+    background-position: center
+    position: absolute
+    border-radius: 50%
+    width: 25px
+    height: 25px
+    right: -40px
+  &:hover::after
+    background: #94A2C4
+    background-image: url("../images/next.svg")
+    background-repeat: no-repeat
+    background-position: center
+.swiper-pagination
+  left: 390px
+  bottom: 20px
+  .swiper-pagination-bullet-active
+    background: #075157
+  .swiper-pagination-bullet
+    margin-right: 10px
