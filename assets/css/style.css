@@ -1227,6 +1227,100 @@ body {
   margin-right: 55px;
 }
 
+.metal-reception-wrap .title-wrap {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.metal-reception-wrap .title-wrap .title {
+  margin-right: 20px;
+}
+
+.metal-reception-wrap .metal-reception {
+  background: #FFFFFF;
+  border-radius: 8px;
+  display: flex;
+}
+
+.metal-reception-wrap .metal-reception .left .text {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  color: #075157;
+}
+
+.metal-reception-wrap .metal-reception .left .text::before {
+  content: url("../images/metal-reception/atention.svg");
+  padding: 0 20px;
+}
+
+.metal-reception-wrap .metal-reception .right {
+  margin: 20px 15px 20px 50px;
+}
+
+.metal-reception-wrap .metal-reception .right .description {
+  margin-bottom: 25px;
+}
+
+.metal-reception-wrap .metal-reception .right .description b {
+  color: #075157;
+}
+
+.metal-reception-wrap .metal-reception .right .input-wrap input {
+  border: none;
+  background: rgba(218, 218, 218, 0.8);
+  border-radius: 8px;
+  padding: 10px;
+  width: 162px;
+  height: 38px;
+  color: #565655;
+  margin-bottom: 20px;
+  outline: none;
+}
+
+.metal-reception-wrap .metal-reception .right .export {
+  margin-bottom: 15px;
+}
+
+.metal-reception-wrap .metal-reception .right .wt-wrap .wt {
+  width: 76px;
+  margin-right: 60px;
+}
+
+.metal-reception-wrap .metal-reception .right .wt-wrap .btn-main {
+  padding: 10px 35px;
+}
+
+.metal-reception-wrap .metal-reception .right p input {
+  margin-right: 10px;
+}
+
+.metal-reception-wrap .metal-reception .right .input-data {
+  font-size: 12px;
+  color: #565655;
+}
+
+.metal-reception-wrap .metal-reception-info-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 25px;
+}
+
+.metal-reception-wrap .metal-reception-info-wrap .metal-reception-info {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  margin-bottom: 10px;
+}
+
+.metal-reception-wrap .metal-reception-info-wrap .metal-reception-info .text {
+  margin-left: 10px;
+  font-weight: bold;
+  color: #075157;
+}
+
 .footer-wrap {
   padding: 50px 0;
   background: #FFFFFF;
