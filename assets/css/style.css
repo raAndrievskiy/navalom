@@ -151,6 +151,7 @@ body {
 
 .header-nav .header-menu {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .header-nav .header-menu .menu-item {
