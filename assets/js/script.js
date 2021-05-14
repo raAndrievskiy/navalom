@@ -34,6 +34,21 @@ const swiperDelivery = new Swiper('.area-slider', {
     nextEl: '.area-button-next',
     prevEl: '.area-button-prev',
   },
+  breakpoints: {
+
+    320: {
+      slidesPerView: 1,
+    },
+
+    768: {
+      slidesPerView: 2,
+
+    },
+
+    1024: {
+      slidesPerView: 3,
+    }
+  }
 });
 const swiperPhoto = new Swiper('.photo-slider', {
   loop: true,
@@ -46,6 +61,64 @@ const swiperPhoto = new Swiper('.photo-slider', {
     nextEl: '.photo-button-next',
     prevEl: '.photo-button-prev',
   },
+  breakpoints: {
+
+    320: {
+      slidesPerView: 1,
+    },
+    617: {
+      slidesPerView: 2,
+    },
+
+    768: {
+      slidesPerView: 3,
+
+    },
+
+    1024: {
+      slidesPerView: 4,
+    }
+  }
+});
+const swiperEquipment = new Swiper('.equipment-slider', {
+  loop: true,
+  spaceBetween: 30,
+  slidesPerView: 3,
+  breakpoints: {
+
+    320: {
+      slidesPerView: 1,
+    },
+
+    768: {
+      slidesPerView: 2,
+
+    },
+
+    1024: {
+      slidesPerView: 3,
+    }
+  }
+});
+const swiperMetalService = new Swiper('.metal-service-slider', {
+  loop: true,
+  spaceBetween: 30,
+  slidesPerView: 3,
+  breakpoints: {
+
+    320: {
+      slidesPerView: 1,
+    },
+
+    768: {
+      slidesPerView: 3,
+
+    },
+
+    1024: {
+      slidesPerView: 3,
+    }
+  }
 });
 
 

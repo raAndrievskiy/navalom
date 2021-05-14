@@ -58,6 +58,7 @@
         color: #075157
   .description
     margin: 20px 0
+    max-width: 1200px
   .calculator
     background: #FFFFFF
     border: 1px solid #C0C0C0
@@ -162,3 +163,33 @@
           width: 80px
           &::placeholder
             color: #fff
+@media screen and (max-width: 1024px)
+  .calculator-wrap
+    flex-wrap: wrap
+    .reviews
+      display: none
+      &-info
+        display: none
+    .description
+      max-width: 600px
+    .calculator
+      max-width: 619px
+      .wrap
+        flex-wrap: wrap
+        .calculator-popup
+          position: sticky
+@media screen and (max-width: 768px)
+  .calculator-wrap
+    .description
+    .calculator
+      border: none
+      background: none
+      &-title
+        display: none
+      .wrap
+        .product, .info
+          display: none
+        .calculator-popup
+          display: block
+          margin: auto
+          margin-top: 20px

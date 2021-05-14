@@ -20,7 +20,6 @@
         padding: 25px 25px 90px 20px
         cursor: pointer
         .metal-item
-          display: flex
           align-items: center
           margin-bottom: 10px
           position: relative
@@ -28,10 +27,19 @@
             content: url("../images/metal-services/metal-arrow.svg")
             position: absolute
             right: 0
+            top: 0
+          .item-wrap
+            display: flex
+            align-items: center
           .item
             margin-left: 15px
             font-weight: bold
             color: #fff
+          .color-metal-ul
+            display: none
+            li
+              color: #fff
+              list-style: inside
         .active::after
           content: url("../images/metal-services/metal-click.svg")
 
@@ -63,3 +71,16 @@
         margin: 10px 15px 25px 15px
       .description
         padding: 0 15px
+@media screen and (max-width: 1024px)
+  .metal
+    flex-wrap: wrap
+    justify-content: center
+    &-info
+      .title-wrap
+        display: block
+        .title--wrap-logo
+          margin-top: 15px
+    .color-metal
+      margin-bottom: 20px
+@media screen and (max-width: 768px)
+  .ss

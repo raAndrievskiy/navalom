@@ -16,10 +16,10 @@ body
   max-width: 1200px
   margin: auto
 .left-container
-  width: 380px
+  max-width: 380px
   border-radius: 8px
 .main-container
-  width: 820px
+  max-width: 820px
   margin-left: 26px
 .btn
   color: #fff
@@ -119,3 +119,27 @@ body
   margin: 20px 0
 .contact-description
   max-width: 794px
+.metal-service-slider
+  padding-bottom: 5px
+@media screen and (max-width: 1024px)
+  .container
+    max-width: 800px
+  .main-wrap
+    display: block
+  .swiper-button-next, .swiper-button-prev
+    display: none
+@media screen and (max-width: 768px)
+  .description
+    max-width: 500px
+  .main-container
+    margin: auto
+    max-width: 500px
+@media screen and (max-width: 614px)
+  .main-container
+    max-width: 320px
+  .swiper-pagination
+    left: 130px
+    bottom: 20px
+@media screen and (max-width: 425px)
+  .main-container
+    max-width: 250px

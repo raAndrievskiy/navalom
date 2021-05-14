@@ -1,10 +1,10 @@
 .main-wrapp
   background: url("../images/main-bg.png") center no-repeat
-  height: 488px
+  min-height: 488px
 .main
   padding-top: 30px
   display: flex
-  .main-call
+  &-call
     background: rgba(#6D81AE, 0.8 )
     padding: 20px 15px
     text-align: center
@@ -40,6 +40,7 @@
       padding: 26px 0 20px 0
       .email, .time, .location
         display: flex
+        flex-wrap: wrap
         align-items: center
         margin-bottom: 20px
         p
@@ -53,7 +54,7 @@
           font-size: 14px
           line-height: 19px
           color: #FFB800
-    .main-call-btn
+    &-btn
       padding: 10px 80px
       &:hover
         background: #FFB800
@@ -72,6 +73,7 @@
           border-radius: 8px
   .price-info
     display: flex
+    flex-wrap: wrap
     .img-wrap
       display: flex
       flex-direction: column
@@ -97,7 +99,7 @@
         margin-top: 70px
         width: 247px
     .price
-      width: 318px
+      max-width: 318px
       margin-left: 20px
       background: #fff
       opacity: 0.8
@@ -108,7 +110,7 @@
       text-align: center
       .purple-btn
         color: #fff
-        width: 263px
+        max-width: 263px
         background: #94A2C4
         border-radius: 8px
         padding: 10px 15px
@@ -134,3 +136,58 @@
         width: 212px
         margin: 0 auto
         padding: 10px 25px
+@media screen and (max-width: 1024px)
+  .main
+    &-call
+      .icon
+        display: block
+        margin-bottom: 5px
+      .info
+        .email, .time, .location
+          p
+            margin-bottom: 5px
+      &-btn
+        display: block
+        padding: 10px
+        max-width: 100%
+      .btn-wrap
+        margin-top: 10px
+        .btn
+          display: block
+          padding: 10px
+          max-width: 100%
+          margin-bottom: 10px
+          &:not(:first-child)
+            margin: 0
+            padding: 10px
+    .price-info
+      .img-wrap
+        display: none
+      .price
+        margin: 0
+      .btn-wrap
+        display: none
+        .purple-btn
+          width: 293px
+        .text
+          display: none
+@media screen and (max-width: 768px)
+  .main
+    &-call
+      display: none
+    .price-info
+      display: block
+      .img-wrap
+        display: none
+      .price
+        margin: 0
+        .purple-btn
+      .btn-wrap
+        .purple-btn
+          max-width: 293px
+@media screen and (max-width: 410px)
+  .main
+    .price-info
+      .price
+        .purple-btn
+          font-size: 12px
