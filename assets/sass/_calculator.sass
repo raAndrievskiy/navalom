@@ -173,6 +173,8 @@
             color: #fff
 .calculator-popup-mobile
   display: none
+.calculator-mobile
+  display: none
 @media screen and (max-width: 1024px)
   .calculator-wrap
     flex-wrap: wrap
@@ -192,14 +194,45 @@
   .calculator-wrap
     .description
     .calculator-y
-      overflow-y: auto
-      width: 100%
-      height: 370px
+      // overflow-y: auto
+      // width: 100%
+      // height: 370px
       .calculator
-        width: 900px
-        &-title
+        max-width: 900px
+        margin-bottom: 30px
+        border-radius: 8px 8px 5px 5px
+        .mobile-title
+          display: none
+        .calculator-mobile
+          .calculator-title
+            font-size: 14px
+            padding-bottom: 0
+          .product-name
+            text-align: center
+            font-size: 12px
+            padding-bottom: 5px
+          .wrap-mobile
+            display: flex
+            text-align: center
+            .product
+              display: flex
+              flex-direction: column
+              width: 100%
+
+              span
+                border-top: 1px solid #C0C0C0
+                border-right: 1px solid #C0C0C0
+                font-size: 14px
+                line-height: 12px
+                &:not(:last-child)
+                  font-weight: bold
+                  height: 26px
+              .last
+                border-right: none
+
         .wrap
           flex-wrap: nowrap
+          display: none
           .product, .info
           .calculator-popup
             display: none
@@ -276,7 +309,14 @@
       width: 80px
       &::placeholder
         color: #fff
-@media screen and (max-width: 700px)
+  .calculator-mobile
+    display: block
+@media screen and (max-width: 520px)
   .calculator-wrap
     .calculator-y
-      width: 400px
+      .calculator
+        .calculator-mobile
+          .wrap-mobile
+            .product
+              span
+                font-size: 10px
