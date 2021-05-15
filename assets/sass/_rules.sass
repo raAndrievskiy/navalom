@@ -163,6 +163,10 @@ body
     background-image: url("../images/icons/point/phone.svg")
     background-position: center
     background-repeat: no-repeat
+.swiper-container.equipment-slider.swiper-container-initialized.swiper-container-horizontal.swiper-container-android
+  padding-bottom: 30px
+.active-ul
+  display: block
 @media screen and (max-width: 1024px)
   .container
     max-width: 800px
@@ -179,12 +183,18 @@ body
   .left-container
     max-width: none
     width: 90%
+  #call, #whatsapp
+    display: none !important
 @media screen and (max-width: 614px)
   .main-container
     max-width: 90%
   .swiper-pagination
     left: 300px
     bottom: 20px
+  .logo
+    width: 130px
 @media screen and (max-width: 425px)
   .main-container
     max-width: 90%
+  .swiper-pagination
+    left: 120px

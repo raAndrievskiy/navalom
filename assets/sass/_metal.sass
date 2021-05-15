@@ -19,6 +19,7 @@
         flex-direction: column
         padding: 25px 25px 90px 20px
         cursor: pointer
+
         .metal-item
           align-items: center
           margin-bottom: 10px
@@ -40,6 +41,9 @@
             li
               color: #fff
               list-style: inside
+        .active
+          .color-metal-ul
+            display: block
         .active::after
           content: url("../images/metal-services/metal-click.svg")
 
@@ -58,7 +62,7 @@
       border-radius: 8px
       text-align: center
       margin-top: 30px
-      width: 244px
+      width: 100%
       padding-bottom: 25px
       &:not(:first-child)
         margin-left: 30px

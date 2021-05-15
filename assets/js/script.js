@@ -1,8 +1,3 @@
-// let menuToggle = $('.header-menu-toggle');
-// menuToggle.on('click', function (event) {
-//   event.preventDefault();
-//   $('.header-menu').slideToggle();
-// });
 
 $(".metal-item").click(function (e) {
   e.preventDefault();
@@ -78,7 +73,10 @@ const swiperPhoto = new Swiper('.photo-slider', {
     1024: {
       slidesPerView: 4,
     }
-  }
+  },
+  pagination: {
+    el: '.photo-pagination',
+  },
 });
 const swiperEquipment = new Swiper('.equipment-slider', {
   loop: true,
@@ -98,7 +96,10 @@ const swiperEquipment = new Swiper('.equipment-slider', {
     1024: {
       slidesPerView: 3,
     }
-  }
+  },
+  pagination: {
+    el: '.equipment-pagination',
+  },
 });
 const swiperMetalService = new Swiper('.metal-service-slider', {
   loop: true,
@@ -121,33 +122,11 @@ const swiperMetalService = new Swiper('.metal-service-slider', {
     1024: {
       slidesPerView: 3,
     }
-  }
+  },
+  pagination: {
+    el: '.metal-service-pagination',
+  },
 });
-
-
-
-// // $('.questions').click(function () {
-// //   $('.questions-text').toggle();
-// // });
-
-
-// $(".questions").click(function (e) {
-//   e.preventDefault();
-//   $('.questions-text').slideToggle();
-//   if ($(this).hasClass('active')) {
-//     $(this).removeClass('active');
-//   } else {
-//     $(this).addClass('active');
-//   }
-// });
-// // $('.questions').click(function (e) {
-// //   e.preventDefault();
-// //   if (!$(this).hasClass('active-link')) {
-// //     $(this).siblings().removeClass('active-link');
-// //     $(this).addClass('active-link');
-// //   }
-// // });
-
 
 
 
@@ -180,3 +159,4 @@ $(document).ready(function () {
 });
 
 
+$('.license').fancybox();
