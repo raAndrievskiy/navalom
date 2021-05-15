@@ -143,30 +143,32 @@ body
       background-image: url("../images/icons/whatsapp.svg")
       background-position: center
       background-repeat: no-repeat
-#call
-  position: fixed
-  right: 30px
-  bottom: 100px
-  outline: none
-  background: #fff
-  border-radius: 50%
-  border: 1px solid #075157
-  background-image: url("../images/icons/point/phone.svg")
-  background-position: center
-  background-repeat: no-repeat
-  width: 60px
-  height: 60px
-  z-index: 99
-  &:hover
-    border: none
-    background: #29afbb
+  #call
+    position: fixed
+    right: 30px
+    bottom: 100px
+    outline: none
+    background: #fff
+    border-radius: 50%
+    border: 1px solid #075157
     background-image: url("../images/icons/point/phone.svg")
     background-position: center
     background-repeat: no-repeat
+    width: 60px
+    height: 60px
+    z-index: 99
+    &:hover
+      border: none
+      background: #29afbb
+      background-image: url("../images/icons/point/phone.svg")
+      background-position: center
+      background-repeat: no-repeat
 .swiper-container.equipment-slider.swiper-container-initialized.swiper-container-horizontal.swiper-container-android
   padding-bottom: 30px
 .active-ul
   display: block
+.fixed-mobile-btn
+  display: none
 @media screen and (max-width: 1024px)
   .container
     max-width: 800px
@@ -185,6 +187,32 @@ body
     width: 90%
   #call, #whatsapp
     display: none !important
+  .fixed-mobile-btn
+    display: flex
+    align-items: center
+    position: fixed
+    bottom: 0
+    width: 100%
+    background: #6d81ae
+    z-index: 99
+    text-align: center
+    height: 30px
+    #call-mobile
+      width: 50%
+      outline: none
+      display: block
+      color: #fff
+      &::before
+        content: url("../images/icons/call.svg")
+        margin-right: 10px
+    #whatsapp-mobile
+      width: 50%
+      outline: none
+      display: block
+      color: #fff
+      &::before
+        content: url("../images/icons/mail.svg")
+        margin-right: 10px
 @media screen and (max-width: 614px)
   .main-container
     max-width: 90%

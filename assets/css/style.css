@@ -197,7 +197,7 @@ body {
   background-repeat: no-repeat;
 }
 
-#call {
+.fixed-btn #call {
   position: fixed;
   right: 30px;
   bottom: 100px;
@@ -213,7 +213,7 @@ body {
   z-index: 99;
 }
 
-#call:hover {
+.fixed-btn #call:hover {
   border: none;
   background: #29afbb;
   background-image: url("../images/icons/point/phone.svg");
@@ -227,6 +227,10 @@ body {
 
 .active-ul {
   display: block;
+}
+
+.fixed-mobile-btn {
+  display: none;
 }
 
 @media screen and (max-width: 1024px) {
@@ -255,6 +259,37 @@ body {
   }
   #call, #whatsapp {
     display: none !important;
+  }
+  .fixed-mobile-btn {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #6d81ae;
+    z-index: 99;
+    text-align: center;
+    height: 30px;
+  }
+  .fixed-mobile-btn #call-mobile {
+    width: 50%;
+    outline: none;
+    display: block;
+    color: #fff;
+  }
+  .fixed-mobile-btn #call-mobile::before {
+    content: url("../images/icons/call.svg");
+    margin-right: 10px;
+  }
+  .fixed-mobile-btn #whatsapp-mobile {
+    width: 50%;
+    outline: none;
+    display: block;
+    color: #fff;
+  }
+  .fixed-mobile-btn #whatsapp-mobile::before {
+    content: url("../images/icons/mail.svg");
+    margin-right: 10px;
   }
 }
 
@@ -533,6 +568,11 @@ body {
   }
 }
 
+.open-menu {
+  position: absolute;
+  right: 0;
+}
+
 .open-menu .header-menu {
   background: #fff;
   position: fixed;
@@ -800,11 +840,12 @@ body {
     display: none;
   }
   .main-wrapp .main .price-info .price {
+    display: none;
     max-width: none;
     width: 100%;
   }
   .main-wrapp .main .price-info .btn-wrap {
-    margin-top: 30px;
+    display: none;
   }
   .main-wrapp .main .price-info .btn-wrap .purple-btn {
     width: 100%;
@@ -2506,6 +2547,7 @@ body {
 @media screen and (max-width: 768px) {
   .footer-wrap {
     padding: 10px;
+    margin-bottom: 33px;
   }
   .footer-wrap .footer .footer-nav .footer-menu {
     flex-wrap: wrap;
