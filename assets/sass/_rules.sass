@@ -19,7 +19,7 @@ body
   max-width: 380px
   border-radius: 8px
 .main-container
-  max-width: 820px
+  width: 820px
   margin-left: 26px
 .btn
   color: #fff
@@ -121,6 +121,48 @@ body
   max-width: 794px
 .metal-service-slider
   padding-bottom: 5px
+.fixed-btn
+  display: block
+  #whatsapp
+    position: fixed
+    right: 30px
+    bottom: 30px
+    outline: none
+    background: #fff
+    border-radius: 50%
+    border: 1px solid #075157
+    background-image: url("../images/icons/whatsapp.svg")
+    background-position: center
+    background-repeat: no-repeat
+    width: 60px
+    height: 60px
+    z-index: 99
+    &:hover
+      border: none
+      background: #29afbb
+      background-image: url("../images/icons/whatsapp.svg")
+      background-position: center
+      background-repeat: no-repeat
+#call
+  position: fixed
+  right: 30px
+  bottom: 100px
+  outline: none
+  background: #fff
+  border-radius: 50%
+  border: 1px solid #075157
+  background-image: url("../images/icons/point/phone.svg")
+  background-position: center
+  background-repeat: no-repeat
+  width: 60px
+  height: 60px
+  z-index: 99
+  &:hover
+    border: none
+    background: #29afbb
+    background-image: url("../images/icons/point/phone.svg")
+    background-position: center
+    background-repeat: no-repeat
 @media screen and (max-width: 1024px)
   .container
     max-width: 800px
@@ -132,14 +174,17 @@ body
   .description
     max-width: 500px
   .main-container
-    margin: auto
-    max-width: 500px
+    margin: 0 auto
+    width: 90%
+  .left-container
+    max-width: none
+    width: 90%
 @media screen and (max-width: 614px)
   .main-container
-    max-width: 320px
+    max-width: 90%
   .swiper-pagination
-    left: 130px
+    left: 300px
     bottom: 20px
 @media screen and (max-width: 425px)
   .main-container
-    max-width: 250px
+    max-width: 90%

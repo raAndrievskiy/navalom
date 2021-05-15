@@ -1,8 +1,8 @@
-let menuToggle = $('.header-menu-toggle');
-menuToggle.on('click', function (event) {
-  event.preventDefault();
-  $('.header-menu').slideToggle();
-});
+// let menuToggle = $('.header-menu-toggle');
+// menuToggle.on('click', function (event) {
+//   event.preventDefault();
+//   $('.header-menu').slideToggle();
+// });
 
 $(".metal-item").click(function (e) {
   e.preventDefault();
@@ -109,6 +109,9 @@ const swiperMetalService = new Swiper('.metal-service-slider', {
     320: {
       slidesPerView: 1,
     },
+    520: {
+      slidesPerView: 2,
+    },
 
     768: {
       slidesPerView: 3,
@@ -144,3 +147,36 @@ const swiperMetalService = new Swiper('.metal-service-slider', {
 // //     $(this).addClass('active-link');
 // //   }
 // // });
+
+
+
+
+$(window).scroll(function () {
+  if ($(this).scrollTop() > 400)
+    $("#call").fadeIn();
+  else
+    $("#call").fadeOut();
+});
+$(window).scroll(function () {
+  if ($(this).scrollTop() > 400)
+    $("#whatsapp").fadeIn();
+  else
+    $("#whatsapp").fadeOut();
+});
+
+
+
+$(document).ready(function () {
+  $('.header-menu-toggle').click(function () {
+    $('.header-menu-toggle').toggleClass('open-menu');
+    $('.header-nav').toggleClass('open-menu');
+    $('body').toggleClass('fixed-page');
+  });
+
+  $(window).resize(function () {
+
+  });
+
+});
+
+

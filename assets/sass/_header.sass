@@ -3,6 +3,9 @@
   padding: 15px 0
   background: #fff
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15)
+  position: sticky
+  top: 0
+  z-index: 999
 .header
   display: flex
   align-items: center
@@ -23,6 +26,144 @@
             color: #fff
         &-link
           color: #075157
+      .burger-item
+        display: none
+        .burger-link
+          display: none
+      .burger-logo
+        display: none
+
+      .toggle
+        position: relative
+        &::after
+          content: url(/assets/images/header-arrow.svg)
+        &:hover::after
+          display: none
+          li
+            a
+              padding: 5px
+        &:hover
+          .toggle-link
+            background: #223394
+            border-radius: 15px
+            padding: 10px
+            color: #fff
+        &:hover .toggle-menu
+          display: block
+        &-link
+          height: 10px
+        &-menu
+          display: none
+          background-color: #fff
+          z-index: 2
+          position: absolute
+          top: 30px
+          right: 0
+          width: 200px
+          padding: 10px 20px
+          border-radius: 15px
+
+          &-sub
+            padding: 0 0 20px 0
+    &-toggle
+      display: none
+.header__nav
+  position: absolute
+  right: 36px
+  display: block
+
+.header__menu
+  display: flex
+  position: relative
+  z-index: 2
+
+  & li
+    list-style: none
+    margin: 0px 0px 0px 36px
+    font-size: 16px
+    text-transform: uppercase
+    text-decoration: none
+
+.content-wrapper
+  margin-top: 78px
+  padding: 10px
+  line-height: 34px
 @media screen and (max-width: 768px)
+  .fixed-page
+    overflow: hidden
+    #whatsapp, #call
+      display: none
+    .span-none
+      display: none!important
+    .span-left
+      transform: rotate(40deg)
+      width: 30px
+      position: absolute
+      transition: 0.4s
+    .span-right
+      transform: rotate(-40deg)
+      width: 30px
+      position: absolute
+      transition: 0.4s
   .header
+    &-nav
+      background: rgb(245, 246, 246)
+      box-shadow: #ccc
+      width: 100%
+      box-shadow: 0 4px 2px -2px rgba(36, 36, 36, 0.37)
+      transition: all 0.4s ease
+      .header-menu
+        display: none
+        position: absolute
+        top: 0
+        right: 0
+        .burger-logo
+          display: block
+          width: 100%
+          padding: 10px
+        .menu-item
+          margin: 10px
+          font-size: 20px
+          text-align: center
+        .burger-item
+          display: block
+          .burger-link
+            display: block
+    &-menu
+      &-ul
+        flex-direction: column
+        align-items: flex-start
+        .toggle-menu
+          top: 25px
+          right: -85px
+          padding-left: 30px
+          width: 178px
+          padding-top: 0
+          border-radius: 15px
+          &-sub
+            padding: 0
+      &-toggle
+        display: flex
+        align-items: center
+        justify-content: space-between
+        flex-direction: column
+        width: 30px
+        height: 20px
+        margin-right: 25px
+        position: relative
+        z-index: 99
+        span
+          width: 100%
+          height: 2px
+          background: #223394
+      .menu-item
+        margin-left: 0
+.open-menu
+  .header-menu
+    background: #fff
+    position: fixed
     display: block
+    width: 100%
+    height: 100%
+    z-index: 9
+    padding-top: 80px
