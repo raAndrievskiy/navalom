@@ -261,6 +261,9 @@ i {
 }
 
 @media screen and (max-width: 768px) {
+  .breadcrumbs {
+    margin-top: 20px;
+  }
   .description {
     max-width: 500px;
   }
@@ -317,7 +320,8 @@ i {
     bottom: 20px;
   }
   .logo {
-    width: 130px;
+    width: 180px;
+    margin-left: 20px;
   }
 }
 
@@ -327,6 +331,10 @@ i {
   }
   .swiper-pagination {
     left: 120px;
+  }
+  .logo {
+    width: 135px;
+    margin-left: 10px;
   }
 }
 
@@ -3091,8 +3099,8 @@ i {
     width: 100%;
   }
   .main-price-wrap .main-price .right .price {
-    width: 92%;
-    margin: 0 20px;
+    width: 80%;
+    margin: auto;
     max-width: none;
   }
 }
