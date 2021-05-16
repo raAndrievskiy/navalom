@@ -306,13 +306,20 @@
             span
               border-top: 1px solid #C0C0C0
               border-right: 1px solid #C0C0C0
-              font-size: 14px
+              font-size: 20px
               line-height: 12px
+              height: 50px
+              padding-top: 20px
               &:not(:last-child)
                 font-weight: bold
-                height: 26px
-            .last
+                height: 50px
+                padding-top: 20px
+          .last-product
+            background: $purple
+            span
+              color: #ffb800
               border-right: none
+
       .wrap
         flex-wrap: nowrap
         display: none
@@ -327,6 +334,7 @@
               width: 100%
               input
                 width: 50%
+
   .calculator-popup-mobile
     display: none
     display: block
@@ -429,4 +437,4 @@
         .wrap-mobile
           .product
             span
-              font-size: 10px
+              font-size: 12px

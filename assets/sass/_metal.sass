@@ -3,9 +3,9 @@
   padding-top: 32px
   .color
     &-metal
-      background: $purple
+      background: rgba(#60749D, 0.8)
       border-radius: 8px
-      height: 670px
+      height: auto
       .title-info
         font-weight: bold
         font-size: 18px
@@ -17,18 +17,20 @@
       &-item
         display: flex
         flex-direction: column
-        padding: 25px 25px 90px 20px
+        padding-bottom: 90px
         cursor: pointer
 
         .metal-item
           align-items: center
-          margin-bottom: 10px
           position: relative
+          padding: 10px 5px 5px 20px
+          &:hover
+            background: #6D81AE
           &::after
             content: url("../images/metal-services/metal-arrow.svg")
             position: absolute
-            right: 0
-            top: 0
+            right: 20px
+            top: 17px
           .item-wrap
             display: flex
             align-items: center
@@ -38,15 +40,18 @@
             color: #fff
           .color-metal-ul
             display: none
-            max-width: 300px
             li
               color: #fff
               list-style: inside
         .active
+          background: #6D81AE
           .color-metal-ul
             display: block
-        .active::after
-          content: url("../images/metal-services/metal-click.svg")
+            padding: 5px
+            li
+              margin-bottom: 5px
+          &::after
+            content: url("../images/metal-services/metal-click.svg")
 
   &-info
     .title-wrap
@@ -87,3 +92,4 @@
           margin-top: 15px
     .color-metal
       margin-bottom: 20px
+      &-item

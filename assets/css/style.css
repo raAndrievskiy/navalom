@@ -887,9 +887,9 @@ i {
 }
 
 .metal .color-metal {
-  background: #6D81AE;
+  background: rgba(96, 116, 157, 0.8);
   border-radius: 8px;
-  height: 670px;
+  height: auto;
 }
 
 .metal .color-metal .title-info {
@@ -905,21 +905,25 @@ i {
 .metal .color-metal-item {
   display: flex;
   flex-direction: column;
-  padding: 25px 25px 90px 20px;
+  padding-bottom: 90px;
   cursor: pointer;
 }
 
 .metal .color-metal-item .metal-item {
   align-items: center;
-  margin-bottom: 10px;
   position: relative;
+  padding: 10px 5px 5px 20px;
+}
+
+.metal .color-metal-item .metal-item:hover {
+  background: #6D81AE;
 }
 
 .metal .color-metal-item .metal-item::after {
   content: url("../images/metal-services/metal-arrow.svg");
   position: absolute;
-  right: 0;
-  top: 0;
+  right: 20px;
+  top: 17px;
 }
 
 .metal .color-metal-item .metal-item .item-wrap {
@@ -935,7 +939,6 @@ i {
 
 .metal .color-metal-item .metal-item .color-metal-ul {
   display: none;
-  max-width: 300px;
 }
 
 .metal .color-metal-item .metal-item .color-metal-ul li {
@@ -943,8 +946,17 @@ i {
   list-style: inside;
 }
 
+.metal .color-metal-item .active {
+  background: #6D81AE;
+}
+
 .metal .color-metal-item .active .color-metal-ul {
   display: block;
+  padding: 5px;
+}
+
+.metal .color-metal-item .active .color-metal-ul li {
+  margin-bottom: 5px;
 }
 
 .metal .color-metal-item .active::after {
@@ -2084,15 +2096,13 @@ i {
     display: block;
     margin: 20px 0;
   }
-}
-
-.estimate-wrap .estimate .btn-wrap {
-  position: static;
-  padding-bottom: 10px;
-}
-
-.estimate-wrap .estimate .description {
-  width: 100%;
+  .estimate-wrap .estimate .btn-wrap {
+    position: static;
+    padding-bottom: 10px;
+  }
+  .estimate-wrap .estimate .description {
+    width: 100%;
+  }
 }
 
 .metal-reception-wrap .title-wrap {
@@ -2497,6 +2507,9 @@ i {
 }
 
 @media screen and (max-width: 768px) {
+  .contacts-wrap {
+    padding: 10px;
+  }
   .contacts-wrap .contacts {
     display: block;
   }
@@ -2516,6 +2529,12 @@ i {
   }
   .contacts-wrap .contacts .right .details .documents .text b {
     font-size: 14px;
+  }
+  .contact-title, .contact-description, .contact-span, .contact-ul {
+    padding-left: 10px;
+  }
+  .service-map-wrap, .service-map {
+    padding: 10px;
   }
   .contact-map-cart {
     padding: 0;
@@ -2955,14 +2974,21 @@ i {
   .calculator-y .calculator .calculator-mobile .wrap-mobile .product span {
     border-top: 1px solid #C0C0C0;
     border-right: 1px solid #C0C0C0;
-    font-size: 14px;
+    font-size: 20px;
     line-height: 12px;
+    height: 50px;
+    padding-top: 20px;
   }
   .calculator-y .calculator .calculator-mobile .wrap-mobile .product span:not(:last-child) {
     font-weight: bold;
-    height: 26px;
+    height: 50px;
+    padding-top: 20px;
   }
-  .calculator-y .calculator .calculator-mobile .wrap-mobile .product .last {
+  .calculator-y .calculator .calculator-mobile .wrap-mobile .last-product {
+    background: #6D81AE;
+  }
+  .calculator-y .calculator .calculator-mobile .wrap-mobile .last-product span {
+    color: #ffb800;
     border-right: none;
   }
   .calculator-y .calculator .wrap {
@@ -3107,7 +3133,7 @@ i {
 
 @media screen and (max-width: 520px) {
   .calculator-y .calculator .calculator-mobile .wrap-mobile .product span {
-    font-size: 10px;
+    font-size: 12px;
   }
 }
 
