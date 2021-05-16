@@ -233,6 +233,21 @@ body {
   display: none;
 }
 
+.breadcrumbs {
+  margin-bottom: 25px;
+}
+
+.breadcrumbs-link {
+  color: #075157;
+}
+
+i {
+  font-weight: 600;
+  color: #075157;
+  margin: 30px 0;
+  display: block;
+}
+
 @media screen and (max-width: 1024px) {
   .container {
     max-width: 800px;
@@ -1570,6 +1585,10 @@ body {
   margin: 30px 0;
 }
 
+.equipment .description {
+  margin: 20px 0;
+}
+
 .equipment-wrap {
   display: flex;
   position: relative;
@@ -2782,13 +2801,23 @@ body {
 .main-price-wrap .main-price .right .price {
   max-width: 318px;
   margin-left: 20px;
-  background: #fff;
-  opacity: 0.8;
+  background: rgba(255, 255, 255, 0.8);
   border-radius: 8px;
   padding: 20px 15px;
   display: flex;
   flex-direction: column;
   text-align: center;
+}
+
+.main-price-wrap .main-price .right .price-title {
+  color: #075157;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 27px;
+}
+
+.main-price-wrap .main-price .right .price .description {
+  margin-top: 10px;
 }
 
 .main-price-wrap .main-price .right .purple-btn {
@@ -2839,7 +2868,7 @@ body {
 
 .file {
   position: relative;
-  margin-bottom: 30px;
+  margin: 30px 0;
 }
 
 .file-slider .swiper-wrapper .swiper-slide {
@@ -2945,6 +2974,7 @@ body {
     width: 50%;
   }
   .calculator-popup-mobile {
+    display: none;
     display: block;
     background: #6D81AE;
     border-radius: 8px;
@@ -3038,6 +3068,9 @@ body {
   }
   .main-price-wrap .main-price .left {
     width: 100%;
+  }
+  .main-price-wrap .main-price .left .title {
+    padding: 10px;
   }
   .main-price-wrap .main-price .left .description {
     padding: 0 10px;
