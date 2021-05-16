@@ -1,3 +1,423 @@
 .main-price-wrap
   background: url("../images/price/price-bg.png") no-repeat center
   .main-price
+    display: flex
+    .reviews
+      background: rgba(#FFFFFF, 0.8)
+      border-radius: 8px
+      text-align: center
+      padding-bottom: 15px
+      margin-bottom: 30px
+      .title
+        border-bottom: 1px solid #075157
+        padding: 20px 0 15px 0
+      &-description
+        font-size: 18px
+        line-height: 25px
+        color: #075157
+        margin: 15px 0 45px
+      .review
+        text-align: left
+        &-first-item
+          display: flex
+          align-items: center
+          margin: 0 30px 0 50px
+          span
+            font-weight: bold
+            font-size: 20px
+            line-height: 27px
+            color: #075157
+            margin: 0 5px
+          p
+            font-weight: bold
+            color: #B4C6C8
+        &-item
+          display: flex
+          justify-content: space-between
+          align-items: center
+          margin: 10px 30px 0 50px
+          .green-btn
+            padding: 8px 40px
+
+      &-info
+        background: rgba(#FFFFFF, 0.8)
+        border-radius: 8px
+        padding-bottom: 30px
+        position: relative
+        text-align: center
+        &::before
+          content: url("../images/attention.svg")
+          position: absolute
+          left: 5px
+          padding: 22px
+        p
+          text-align: left
+          font-size: 18px
+          line-height: 25px
+          padding: 20px 30px 30px 65px
+          margin: auto
+          color: #075157
+    .description
+      margin: 20px 0
+      max-width: 1200px
+    .calculator
+      background: #FFFFFF
+      border: 1px solid #C0C0C0
+      border-radius: 8px
+      margin-bottom: 100px
+      &-title
+        text-align: center
+        font-style: italic
+        font-weight: 600
+        font-size: 18px
+        line-height: 25px
+        padding: 10px 0
+      .wrap
+        max-width: 685px
+        display: flex
+        position: relative
+        .product
+          display: flex
+          flex-direction: column
+          justify-content: flex-end
+          text-align: center
+          border-right: 1px solid #C0C0C0
+          .bold
+            border-top: 1px solid #C0C0C0
+            font-weight: bold
+            font-size: 14px
+            color: #075157
+            padding: 10px
+            height: 59px
+            span
+              font-weight: normal
+              color: #075157
+
+        .info
+          display: flex
+          flex-direction: column
+          text-align: center
+          width: 84px
+          border-right: 1px solid #C0C0C0
+          span
+            border-top: 1px solid #C0C0C0
+            font-size: 14px
+            color: #075157
+            padding: 10px
+            height: 59px
+        .calculator-popup
+          background: $purple
+          border-radius: 8px
+          width: 208px
+          height: 343px
+          text-align: center
+          position: absolute
+          right: -136px
+          top: -46px
+          .calculator-title
+            color: #fff
+          span
+            color: #fff
+            display: block
+            margin: 20px 0
+          &-wrap
+            border-top: 1px solid #C0C0C0
+            position: relative
+            &:last-of-type
+              border-bottom: 1px solid #C0C0C0
+            .btn-calc
+              color: #fff
+              width: 40px
+              height: 40px
+              border: none
+              background: #5B6FA3
+              &:active, &:hover
+                background: #2E4684
+            .minus
+              position: absolute
+              left: 0
+            .plus
+              position: absolute
+              right: 0
+            input
+              color: #fff
+              width: 120px
+              text-align: center
+              outline: none
+              border: none
+              background: none
+              height: 40px
+            input::-webkit-outer-spin-button,
+            input::-webkit-inner-spin-button
+              -webkit-appearance: none
+              margin: 0
+          .subtitle
+            margin-top: 5px
+            font-style: italic
+            color: #FFB800
+          input::-webkit-outer-spin-button,
+          input::-webkit-inner-spin-button
+            -webkit-appearance: none
+            margin: 0
+          .result
+            border: none
+            background: none
+            outline: none
+            text-align: center
+            font-style: italic
+            font-weight: bold
+            font-size: 18px
+            line-height: 25px
+            color: #FFFFFF
+            width: 80px
+            &::placeholder
+              color: #fff
+    .left
+      width: 70%
+      .description
+        max-width: 667px
+      .price-span
+        display: flex
+        align-items: center
+        margin-bottom: 70px
+        &::before
+          margin-right: 10px
+          content: url("../images/price/price-atention.svg")
+      .price-exel
+        display: flex
+        align-items: center
+        justify-content: space-evenly
+        .btn-main
+          margin: 0
+          text-align: center
+          display: block
+    .right
+      width: 30%
+      margin: 30px 0
+      .price
+        max-width: 318px
+        margin-left: 20px
+        background: #fff
+        opacity: 0.8
+        border-radius: 8px
+        padding: 20px 15px
+        display: flex
+        flex-direction: column
+        text-align: center
+      .purple-btn
+        color: #fff
+        max-width: 263px
+        background: #94A2C4
+        border-radius: 8px
+        padding: 10px 15px
+        margin: 0 auto
+      &-title
+        font-weight: bold
+        font-size: 18px
+        line-height: 25px
+        margin: 15px 0
+      .product-wrap
+        text-align-last: left
+        display: flex
+        justify-content: space-between
+        margin-bottom: 16px
+      .price-link
+        text-decoration-line: underline
+        color: #075157
+        margin-bottom: 16px
+      .btn
+        background: #FFB800
+        border-radius: 8px
+        border: none
+        width: 212px
+        margin: 0 auto
+        padding: 10px 25px
+.calculator-popup-mobile
+  display: none
+.calculator-mobile
+  display: none
+.file
+  position: relative
+  margin-bottom: 30px
+  &-slider
+    .swiper-wrapper
+      .swiper-slide
+        background: #FFFFFF
+        border-radius: 8px
+        padding: 10px
+        text-align: center
+        .file-slide
+          b
+            color: #075157
+            text-align: left
+            display: block
+            margin-bottom: 30px
+          .green-btn
+            display: block
+            margin-bottom: 10px
+  &-pagination
+    text-align: center
+    position: static
+
+@media screen and (max-width: 1024px)
+  .calculator-wrap
+    flex-wrap: wrap
+    .reviews
+      display: none
+      &-info
+        display: none
+    .description
+      max-width: 600px
+    .calculator
+      max-width: 619px
+      .wrap
+        flex-wrap: wrap
+        .calculator-popup
+          position: static
+@media screen and (max-width: 768px)
+
+  .calculator-y
+    .calculator
+      display: block
+      max-width: 900px
+      margin-bottom: 30px
+      border-radius: 8px 8px 5px 5px
+      .calculator-mobile
+        .calculator-title
+          font-size: 14px
+          padding-bottom: 0
+        .product-name
+          text-align: center
+          font-size: 12px
+          padding-bottom: 5px
+        .wrap-mobile
+          display: flex
+          text-align: center
+          .product
+            display: flex
+            flex-direction: column
+            width: 100%
+            span
+              border-top: 1px solid #C0C0C0
+              border-right: 1px solid #C0C0C0
+              font-size: 14px
+              line-height: 12px
+              &:not(:last-child)
+                font-weight: bold
+                height: 26px
+            .last
+              border-right: none
+      .wrap
+        flex-wrap: nowrap
+        display: none
+        .product, .info
+        .calculator-popup
+          display: none
+          &-wrap
+            .mobile-calc
+              display: block
+              margin: auto
+              margin-top: 20px
+              width: 100%
+              input
+                width: 50%
+  .calculator-popup-mobile
+    display: block
+    background: $purple
+    border-radius: 8px
+    width: 100%
+    height: 343px
+    text-align: center
+    .calculator-title
+      color: #fff
+    span
+      color: #fff
+      display: block
+      margin: 20px 0
+    .calculator-popup-wrap
+      border-top: 1px solid #C0C0C0
+      position: relative
+      &:last-of-type
+        border-bottom: 1px solid #C0C0C0
+      .btn-calc
+        color: #fff
+        width: 40px
+        height: 40px
+        border: none
+        background: #5B6FA3
+        &:active, &:hover
+          background: #2E4684
+      .minus
+        position: absolute
+        left: 0
+      .plus
+        position: absolute
+        right: 0
+      input
+        color: #fff
+        width: 120px
+        text-align: center
+        outline: none
+        border: none
+        background: none
+        height: 40px
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button
+        -webkit-appearance: none
+        margin: 0
+    .subtitle
+      margin-top: 5px
+      font-style: italic
+      color: #FFB800
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button
+      -webkit-appearance: none
+      margin: 0
+    .result
+      border: none
+      background: none
+      outline: none
+      text-align: center
+      font-style: italic
+      font-weight: bold
+      font-size: 18px
+      line-height: 25px
+      color: #FFFFFF
+      width: 80px
+      &::placeholder
+        color: #fff
+  .calculator-mobile
+    display: block
+  .calculator-title-none
+    display: none
+  .main-price-wrap
+    background: none
+    .main-price
+      display: block
+      .left
+        width: 100%
+        .description
+          padding: 0 10px
+        .price-span
+          margin-bottom: 20px
+          padding-left: 10px
+        .price-exel
+          display: block
+          text-align: center
+          .btn-main
+            margin: auto
+            margin-top: 15px
+      .right
+        width: 100%
+        .price
+          width: 92%
+          margin: 0 20px
+          max-width: none
+@media screen and (max-width: 520px)
+  .calculator-y
+    .calculator
+      .calculator-mobile
+        .wrap-mobile
+          .product
+            span
+              font-size: 10px

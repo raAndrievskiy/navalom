@@ -104,6 +104,35 @@ const swiperEquipment = new Swiper('.equipment-slider', {
     el: '.equipment-pagination',
   },
 });
+
+const swiperFile = new Swiper('.file-slider', {
+  loop: true,
+  spaceBetween: 30,
+  slidesPerView: 3,
+  breakpoints: {
+
+    320: {
+      slidesPerView: 1,
+    },
+
+    768: {
+      slidesPerView: 2,
+
+    },
+
+    1024: {
+      slidesPerView: 3,
+    }
+  },
+  pagination: {
+    el: '.file-pagination',
+  },
+  navigation: {
+    nextEl: '.file-button-next',
+    prevEl: '.file-button-prev',
+  },
+});
+
 const swiperMetalService = new Swiper('.metal-service-slider', {
   loop: true,
   spaceBetween: 30,
