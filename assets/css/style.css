@@ -808,6 +808,10 @@ i {
   padding: 10px 25px;
 }
 
+.main-call-desctop {
+  display: none;
+}
+
 @media screen and (max-width: 1024px) {
   .main-call .icon {
     display: block;
@@ -873,6 +877,9 @@ i {
   .main-wrapp .main .price-info .btn-wrap .purple-btn {
     width: 100%;
   }
+  .main-wrapp-mobile {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 410px) {
@@ -886,13 +893,13 @@ i {
   padding-top: 32px;
 }
 
-.metal .color-metal {
+.color-metal {
   background: rgba(96, 116, 157, 0.8);
   border-radius: 8px;
   height: auto;
 }
 
-.metal .color-metal .title-info {
+.color-metal .title-info {
   font-weight: bold;
   font-size: 18px;
   line-height: 25px;
@@ -902,82 +909,82 @@ i {
   border-bottom: 1px solid #60749D;
 }
 
-.metal .color-metal-item {
+.color-metal-item {
   display: flex;
   flex-direction: column;
   padding-bottom: 90px;
   cursor: pointer;
 }
 
-.metal .color-metal-item .metal-item {
+.color-metal-item .metal-item {
   align-items: center;
   position: relative;
   padding: 10px 5px 5px 20px;
 }
 
-.metal .color-metal-item .metal-item:hover {
+.color-metal-item .metal-item:hover {
   background: #6D81AE;
 }
 
-.metal .color-metal-item .metal-item::after {
+.color-metal-item .metal-item::after {
   content: url("../images/metal-services/metal-arrow.svg");
   position: absolute;
   right: 20px;
   top: 17px;
 }
 
-.metal .color-metal-item .metal-item .item-wrap {
+.color-metal-item .metal-item .item-wrap {
   display: flex;
   align-items: center;
 }
 
-.metal .color-metal-item .metal-item .item {
+.color-metal-item .metal-item .item {
   margin-left: 15px;
   font-weight: bold;
   color: #fff;
 }
 
-.metal .color-metal-item .metal-item .color-metal-ul {
+.color-metal-item .metal-item .color-metal-ul {
   display: none;
 }
 
-.metal .color-metal-item .metal-item .color-metal-ul li {
+.color-metal-item .metal-item .color-metal-ul li {
   color: #fff;
   list-style: inside;
 }
 
-.metal .color-metal-item .active {
+.color-metal-item .active {
   background: #6D81AE;
 }
 
-.metal .color-metal-item .active .color-metal-ul {
+.color-metal-item .active .color-metal-ul {
   display: block;
   padding: 5px;
 }
 
-.metal .color-metal-item .active .color-metal-ul li {
+.color-metal-item .active .color-metal-ul li {
   margin-bottom: 5px;
 }
 
-.metal .color-metal-item .active::after {
+.color-metal-item .active::after {
   content: url("../images/metal-services/metal-click.svg");
 }
 
-.metal-info .title-wrap {
+.color-info .title-wrap {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.metal-info .metal-description {
+.color-info .metal-description {
   margin: 25px 0 20px 0;
 }
 
-.metal-service-wrap {
+.color-service-wrap {
   display: flex;
 }
 
-.metal-service-wrap .metal-service {
+.color-service-wrap .metal-service {
   background: #FFFFFF;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 8px;
@@ -987,23 +994,27 @@ i {
   padding-bottom: 25px;
 }
 
-.metal-service-wrap .metal-service:not(:first-child) {
+.color-service-wrap .metal-service:not(:first-child) {
   margin-left: 30px;
 }
 
-.metal-service-wrap .metal-service-img {
+.color-service-wrap .metal-service-img {
   width: 100%;
   height: 152px;
 }
 
-.metal-service-wrap .metal-service-title {
+.color-service-wrap .metal-service-title {
   font-weight: bold;
   color: #075157;
   margin: 10px 15px 25px 15px;
 }
 
-.metal-service-wrap .metal-service .description {
+.color-service-wrap .metal-service .description {
   padding: 0 15px;
+}
+
+.color-metal-desktop {
+  display: none;
 }
 
 @media screen and (max-width: 1024px) {
@@ -1019,6 +1030,15 @@ i {
   }
   .metal .color-metal {
     margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .metal .color-metal-mobile {
+    display: none;
+  }
+  .color-metal-desktop {
+    display: block;
   }
 }
 

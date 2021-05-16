@@ -1,57 +1,56 @@
 .metal
   display: flex
   padding-top: 32px
-  .color
-    &-metal
-      background: rgba(#60749D, 0.8)
-      border-radius: 8px
-      height: auto
-      .title-info
-        font-weight: bold
-        font-size: 18px
-        line-height: 25px
-        color: #FFFFFF
-        text-align: center
-        padding: 20px 65px
-        border-bottom: 1px solid #60749D
-      &-item
-        display: flex
-        flex-direction: column
-        padding-bottom: 90px
-        cursor: pointer
-
-        .metal-item
-          align-items: center
-          position: relative
-          padding: 10px 5px 5px 20px
-          &:hover
-            background: #6D81AE
-          &::after
-            content: url("../images/metal-services/metal-arrow.svg")
-            position: absolute
-            right: 20px
-            top: 17px
-          .item-wrap
-            display: flex
-            align-items: center
-          .item
-            margin-left: 15px
-            font-weight: bold
-            color: #fff
-          .color-metal-ul
-            display: none
-            li
-              color: #fff
-              list-style: inside
-        .active
+.color
+  &-metal
+    background: rgba(#60749D, 0.8)
+    border-radius: 8px
+    height: auto
+    .title-info
+      font-weight: bold
+      font-size: 18px
+      line-height: 25px
+      color: #FFFFFF
+      text-align: center
+      padding: 20px 65px
+      border-bottom: 1px solid #60749D
+    &-item
+      display: flex
+      flex-direction: column
+      padding-bottom: 90px
+      cursor: pointer
+      .metal-item
+        align-items: center
+        position: relative
+        padding: 10px 5px 5px 20px
+        &:hover
           background: #6D81AE
-          .color-metal-ul
-            display: block
-            padding: 5px
-            li
-              margin-bottom: 5px
-          &::after
-            content: url("../images/metal-services/metal-click.svg")
+        &::after
+          content: url("../images/metal-services/metal-arrow.svg")
+          position: absolute
+          right: 20px
+          top: 17px
+        .item-wrap
+          display: flex
+          align-items: center
+        .item
+          margin-left: 15px
+          font-weight: bold
+          color: #fff
+        .color-metal-ul
+          display: none
+          li
+            color: #fff
+            list-style: inside
+      .active
+        background: #6D81AE
+        .color-metal-ul
+          display: block
+          padding: 5px
+          li
+            margin-bottom: 5px
+        &::after
+          content: url("../images/metal-services/metal-click.svg")
 
   &-info
     .title-wrap
@@ -81,6 +80,8 @@
         margin: 10px 15px 25px 15px
       .description
         padding: 0 15px
+.color-metal-desktop
+  display: none
 @media screen and (max-width: 1024px)
   .metal
     flex-wrap: wrap
@@ -93,3 +94,9 @@
     .color-metal
       margin-bottom: 20px
       &-item
+@media screen and (max-width: 768px)
+  .metal
+    .color-metal-mobile
+      display: none
+  .color-metal-desktop
+    display: block
