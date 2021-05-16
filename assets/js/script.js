@@ -1,20 +1,23 @@
 
 $(".metal-item").click(function (e) {
   e.preventDefault();
-  $('.still').slideToggle();
-  if ($(this).hasClass('active')) {
-    $(this).removeClass('active');
-  } else {
+  $('.color-metal-ul .active').slideToggle();
+  if (!$(this).hasClass('active')) {
+    $(this).siblings().removeClass('active');
     $(this).addClass('active');
+  } else {
+    $(this).removeClass('active');
   }
 });
 
-
-$('.sections-wrap').click(function (e) {
+$(".questions").click(function (e) {
   e.preventDefault();
-  if (!$(this).hasClass('active-link')) {
-    $(this).siblings().removeClass('active-link');
-    $(this).addClass('active-link');
+  $('.questions-text').slideToggle();
+  if (!$(this).hasClass('active-questions')) {
+    $(this).siblings().removeClass('active-questions');
+    $(this).addClass('active-questions');
+  } else {
+    $(this).removeClass('active-questions');
   }
 });
 

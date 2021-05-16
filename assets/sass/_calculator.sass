@@ -194,15 +194,12 @@
   .calculator-wrap
     .description
     .calculator-y
-      // overflow-y: auto
-      // width: 100%
-      // height: 370px
       .calculator
+        display: none
         max-width: 900px
         margin-bottom: 30px
         border-radius: 8px 8px 5px 5px
-        .mobile-title
-          display: none
+
         .calculator-mobile
           .calculator-title
             font-size: 14px
@@ -218,7 +215,6 @@
               display: flex
               flex-direction: column
               width: 100%
-
               span
                 border-top: 1px solid #C0C0C0
                 border-right: 1px solid #C0C0C0
@@ -229,7 +225,6 @@
                   height: 26px
               .last
                 border-right: none
-
         .wrap
           flex-wrap: nowrap
           display: none
@@ -311,6 +306,8 @@
         color: #fff
   .calculator-mobile
     display: block
+  .calculator-title-none
+    display: none
 @media screen and (max-width: 520px)
   .calculator-wrap
     .calculator-y

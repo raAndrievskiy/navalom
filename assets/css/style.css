@@ -528,7 +528,7 @@ body {
     z-index: 99;
   }
   .header-menu-toggle span {
-    width: 100%;
+    width: 20px;
     height: 2px;
     background: #223394;
   }
@@ -912,6 +912,7 @@ body {
 
 .metal .color-metal-item .metal-item .color-metal-ul {
   display: none;
+  max-width: 300px;
 }
 
 .metal .color-metal-item .metal-item .color-metal-ul li {
@@ -1265,12 +1266,10 @@ body {
 
 @media screen and (max-width: 768px) {
   .calculator-wrap .calculator-y .calculator {
+    display: none;
     max-width: 900px;
     margin-bottom: 30px;
     border-radius: 8px 8px 5px 5px;
-  }
-  .calculator-wrap .calculator-y .calculator .mobile-title {
-    display: none;
   }
   .calculator-wrap .calculator-y .calculator .calculator-mobile .calculator-title {
     font-size: 14px;
@@ -1401,6 +1400,9 @@ body {
   }
   .calculator-mobile {
     display: block;
+  }
+  .calculator-title-none {
+    display: none;
   }
 }
 
@@ -1942,6 +1944,7 @@ body {
 }
 
 .questions-wrap .questions-text {
+  display: none;
   margin-top: 20px;
   max-width: 553px;
 }
@@ -2276,6 +2279,7 @@ body {
   }
   .service-map-wrap .service-map .right img {
     width: 100%;
+    height: auto;
   }
 }
 
@@ -2472,13 +2476,27 @@ body {
   .contacts-wrap .contacts .left {
     width: 100%;
   }
+  .contacts-wrap .contacts .left .contact-social {
+    flex-direction: column;
+    align-items: start;
+  }
   .contacts-wrap .contacts .right {
     margin-top: 20px;
     width: 100%;
   }
+  .contacts-wrap .contacts .right .details .documents .number span {
+    font-size: 14px;
+  }
+  .contacts-wrap .contacts .right .details .documents .text b {
+    font-size: 14px;
+  }
   .contact-map-cart {
     padding: 0;
   }
+}
+
+.main-price-wrap {
+  background: url("../images/price/price-bg.png") no-repeat center;
 }
 
 .footer-wrap {
