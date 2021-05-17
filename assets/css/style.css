@@ -248,6 +248,10 @@ i {
   display: block;
 }
 
+.exel-desktop {
+  display: none;
+}
+
 @media screen and (max-width: 1024px) {
   .container {
     max-width: 800px;
@@ -304,10 +308,20 @@ i {
     outline: none;
     display: block;
     color: #fff;
+    justify-content: center;
+    display: flex;
+    align-items: center;
   }
   .fixed-mobile-btn #whatsapp-mobile::before {
-    content: url("../images/icons/mail.svg");
+    content: url("../images/icons/whatsapp.svg");
     margin-right: 10px;
+  }
+  .exel-desktop {
+    display: block;
+    margin-top: 20px;
+  }
+  .exel-mobile {
+    display: none !important;
   }
 }
 
@@ -2082,6 +2096,16 @@ i {
   text-decoration-line: underline;
 }
 
+.estimate-wrap .estimate .btn-wrap input {
+  outline: none;
+  border: none;
+  background: rgba(218, 218, 218, 0.8);
+  border-radius: 8px;
+  width: 150px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
 .download {
   display: flex;
   align-items: center;
@@ -2888,7 +2912,7 @@ i {
 }
 
 .main-price-wrap .main-price .right .product-wrap {
-  text-align-last: left;
+  text-align: left;
   display: flex;
   justify-content: space-between;
   margin-bottom: 16px;
@@ -2971,6 +2995,9 @@ i {
 }
 
 @media screen and (max-width: 768px) {
+  .color-metal-mob {
+    display: none;
+  }
   .calculator-y .calculator {
     display: block;
     max-width: 900px;
@@ -3363,6 +3390,7 @@ i {
 }
 
 .footer-wrap .footer .seoremica {
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
