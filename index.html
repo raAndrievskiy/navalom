@@ -157,12 +157,22 @@
 
             <a href="#" class="btn main-call-btn">Открыть схему проезда</a>
             <div class="btn-wrap">
-              <a href="#" class="btn">Заказать звонок</a>
+              <a href="#" class="btn" data-fancybox data-src="#call-manager">Заказать звонок</a>
               <a href="#" class="btn">Где сдать лом</a>
             </div>
 
           </div>
           <!-- /.main-call -->
+
+          <div id="call-manager" style="display: none;">
+            <img src="assets/images/logo.svg" alt="" class="popup-logo">
+            <p class="popup-subtitle">Работаем с 9 - 21</p>
+            <h2 class="popup-title">Заказать звонок менеджера компании</h2>
+            <input type="tel" placeholder="+7 (___) ___-__-__">
+            <input type="email" placeholder="e-mail">
+            <p class="popup-text">Перезваниваем в рабочее время сразу же</p>
+            <a href="#" class="btn-main" data-fancybox data-src="#message">Заказать звонок</a>
+          </div>
 
         </div>
         <!-- /.left-container -->
@@ -540,9 +550,26 @@
             Если Вас не устроило качество обслуживания при приеме лома, вывозе, демонтаже или же возникли любые
             трудности, которые помешали сдать металл в нашей компании
           </p>
-          <a href="#" class="btn-main">Напишите нам</a>
+          <a href="#" class="btn-main" data-fancybox data-src="#write-to-us">Напишите нам</a>
+
         </div>
         <!-- /.reviews-info -->
+
+        <div id="write-to-us" style="display:none;">
+          <img src="assets/images/logo.svg" alt="" class="popup-logo">
+          <h2 class="popup-title">Напишите нам сообщение</h2>
+          <p class="popup-description">Не забудьте в письме указать контакты для связи</p>
+          <textarea name="message" id=""></textarea>
+          <a href="#" class="btn-main" data-fancybox data-src="#message">Отправить</a>
+        </div>
+
+
+        <div id="message" style="display:none;">
+          <img src="assets/images/logo.svg" alt="" class="popup-logo">
+          <p class="popup-description">Заявка успешно отправлена. Ожидайте звонок нашего менеджера</p>
+        </div>
+
+
       </div>
       <!-- /.left-container -->
 
@@ -864,7 +891,7 @@
                 <input type="radio">
                 Согласен с обработкой моих персональных данных в соответствии с политикой конфиденциальности.
               </p>
-              <a href="#" class="btn-main">Получить предложение</a>
+              <a href="#" class="btn-main" data-fancybox data-src="#message">Получить предложение</a>
             </div>
             <!-- /.input-3 -->
 
@@ -902,7 +929,7 @@
                         <span>2 часа</span>
                       </div>
                     </div>
-                    <a href="#" class="green-btn">Заказать</a>
+                    <a href="#" class="green-btn" data-fancybox data-src="#export-metal">Заказать</a>
                   </div>
                   <!-- /.equipment-item -->
                 </div>
@@ -924,7 +951,7 @@
                         <span>2 часа</span>
                       </div>
                     </div>
-                    <a href="#" class="green-btn">Заказать</a>
+                    <a href="#" class="green-btn" data-fancybox data-src="#export-metal">Заказать</a>
                   </div>
                   <!-- /.equipment-item -->
                 </div>
@@ -946,7 +973,7 @@
                         <span>2 часа</span>
                       </div>
                     </div>
-                    <a href="#" class="green-btn">Заказать</a>
+                    <a href="#" class="green-btn" data-fancybox data-src="#export-metal">Заказать</a>
                   </div>
                   <!-- /.equipment-item -->
                 </div>
@@ -954,6 +981,15 @@
             </div>
             <div class="swiper-pagination equipment-pagination"></div>
 
+            <div id="export-metal" style="display: none;">
+              <img src="assets/images/logo.svg" alt="" class="popup-logo">
+              <p class="popup-subtitle">Работаем с 9 - 21</p>
+              <h2 class="popup-title">Заказать Вывоз металлолома</h2>
+              <input type="tel" placeholder="+7 (___) ___-__-__">
+              <input type="email" placeholder="e-mail">
+              <p class="popup-text">Перезваниваем в рабочее время сразу же</p>
+              <a href="#" class="btn-main" data-fancybox data-src="#message">Заказать звонок</a>
+            </div>
 
           </div>
           <!-- /.equipment-wrap -->
@@ -970,7 +1006,7 @@
             обходится дороже.
           </p>
           <div class="bg"></div>
-          <a href="#" class="btn-main">Заказать услугу вывоза</a>
+          <a href="#" class="btn-main" data-fancybox data-src="#call-manager">Заказать услугу вывоза</a>
         </div>
         <!-- /.reception -->
 
@@ -990,7 +1026,7 @@
                 <p class="description">
                   Работают мобильные пункты приема металлолома, а также доступна услуга вывоза.
                 </p>
-                <a href="#" class="green-btn">Сдать лом</a>
+                <a href="#" class="green-btn" data-fancybox data-src="#delivery-popup">Сдать лом</a>
               </div>
               <!-- /.swiper-slide -->
 
@@ -1000,7 +1036,7 @@
                 <p class="description">
                   Работают мобильные пункты приема металлолома, а также доступна услуга вывоза.
                 </p>
-                <a href="#" class="green-btn">Сдать лом</a>
+                <a href="#" class="green-btn" data-fancybox data-src="#delivery-popup">Сдать лом</a>
               </div>
               <!-- /.swiper-slide -->
 
@@ -1010,12 +1046,11 @@
                 <p class="description">
                   Работают мобильные пункты приема металлолома, а также доступна услуга вывоза.
                 </p>
-                <a href="#" class="green-btn">Сдать лом</a>
+                <a href="#" class="green-btn" data-fancybox data-src="#delivery-popup">Сдать лом</a>
               </div>
               <!-- /.swiper-slide -->
 
             </div>
-
 
           </div>
 
@@ -1023,6 +1058,16 @@
 
           <div class="swiper-button-prev area-button-prev"></div>
           <div class="swiper-button-next area-button-next"></div>
+
+          <div id="delivery-popup" style="display: none;">
+            <img src="assets/images/logo.svg" alt="" class="popup-logo">
+            <p class="popup-subtitle">Работаем с 9 - 21</p>
+            <h2 class="popup-title">Сдать метало дорого НЕВАЛОМ</h2>
+            <input type="tel" placeholder="+7 (___) ___-__-__">
+            <input type="email" placeholder="e-mail">
+            <p class="popup-text">Перезваниваем в рабочее время сразу же</p>
+            <a href="#" class="btn-main" data-fancybox data-src="#message">Заказать звонок</a>
+          </div>
 
         </div>
         <!-- /.delivery -->
@@ -1191,7 +1236,7 @@
                 <li>Бонусная цена для постоянных клиентов.</li>
               </ul>
               <div class="btn-wrap">
-                <a href="#" class="btn-main">Сдать как физ. лицо</a>
+                <a href="#" class="btn-main" data-fancybox data-src="#call-manager">Сдать как физ. лицо</a>
               </div>
             </div>
             <!-- /.natural- -->
@@ -1205,7 +1250,7 @@
                 <li>Индивидуальные условия при долгосрочном сотрудничестве.</li>
               </ul>
               <div class="btn-wrap">
-                <a href="#" class="btn-main">Сдать как юр. лицо</a>
+                <a href="#" class="btn-main" data-fancybox data-src="#call-manager">Сдать как юр. лицо</a>
               </div>
             </div>
             <!-- /.entities -->
@@ -1476,7 +1521,7 @@
                 <img src="assets/images/clip.svg" class="clip" alt="">
                 <span>Прикрепить фото</span>
               </div>
-              <a href="#" class="btn-main">Отправить</a>
+              <a href="#" class="btn-main" data-fancybox data-src="#message">Отправить</a>
             </div>
 
           </div>
@@ -1609,7 +1654,7 @@
               <img src="assets/images/icons/point/phone.svg" alt="" class="phone-img">
               8 (812) 200-20-20
             </div>
-            <a href="#" class="btn-main">Заказать звонок</a>
+            <a href="#" class="btn-main" data-fancybox data-src="#call-manager">Заказать звонок</a>
           </div>
           <!-- /.footer-phone -->
 
